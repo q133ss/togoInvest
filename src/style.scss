@@ -1,0 +1,184 @@
+// Reset
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+// Code
+$layoutWidth: 1186px;
+
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/Raleway-VariableFont_wght.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "NunitoSans";
+  src: url("/fonts/NunitoSans.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter.ttf") format("ttf");
+}
+
+.header__nav{
+  display: flex;
+  justify-content: space-between;
+  width: $layoutWidth;
+  margin: 0 auto;
+  padding-top: 53px;
+}
+
+.header__left-wrap{
+  display: flex;
+  gap: 79px;
+  align-items: center;
+}
+
+.logo__text{
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.logo__primary-text{
+  color: #ffba6e;
+}
+
+.menu{
+  display: flex;
+  list-style: none;
+  gap: 64px;
+}
+
+.header__menu-item{
+  font-family: "NunitoSans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.header__phone{
+  display: flex;
+  align-items: center;
+}
+
+.header__phone-img{
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+}
+
+.header__phone-text{
+  font-family: "NunitoSans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+}
+
+// First screen
+
+.main__section{
+  background-image: url('/img/Group3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 874px;
+  width: 100%;
+}
+
+.main__screen-content--wrap{
+  padding-top: 111px;
+  width: $layoutWidth;
+  margin: 0 auto;
+}
+
+.main__screen-content--title{
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 48px;
+  color: #ffffff;
+  max-width: 554px;
+}
+
+.main__screen-content--description-wrap{
+  display: flex;
+  height: 96px;
+  margin-bottom: 101px;
+  align-items: center;
+}
+
+.main__screen-content--rectangle{
+  margin-right: 30px;
+  width: 70px;
+  height: 4px;
+  background: #FFBA6E;
+}
+
+.main__screen-content--description{
+  font-family: "Inter", sans-serif;
+  margin-top: 66px;
+  color: #ffffff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 160% */
+  letter-spacing: 0.5px;
+  width: 400px;
+}
+
+.main__screen-btn{
+  font-family: "NunitoSans", sans-serif;
+  border-radius: 8px;
+  background-color: #FFBA6E;
+  color: #ffffff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  padding: 21px 30px;
+  text-decoration: none;
+}
