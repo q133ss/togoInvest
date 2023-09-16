@@ -3,7 +3,7 @@
 </script>
 
 <template>
-<nav class="header__nav">
+<nav class="header__nav container">
   <div class="header__left-wrap">
   <span class="logo__text">
     TOGO
