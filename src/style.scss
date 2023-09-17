@@ -1101,6 +1101,10 @@ footer .logo__text{
   margin-bottom: 113px;
 }
 
+footer .container .footer_header-wrap:nth-child(2){
+  gap: 86px;
+}
+
 .footer_menu{
   display: flex;
   gap: 44px;
@@ -1138,6 +1142,7 @@ footer .logo__text{
   font-weight: 400;
   line-height: 18px; /* 134.328% */
   letter-spacing: 0.288px;
+  width: 700px;
 }
 
 .footer_content p:not(:last-child){
