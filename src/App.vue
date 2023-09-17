@@ -138,8 +138,57 @@ import Header from "./components/Header.vue";
           </h5>
         </div>
       </div>
-
     </div>
+  </section>
+  <section class="steps container">
+    <h3 class="calculator__section-title container steps__title">
+      5 шагов <br>
+      к получению инвестиций
+    </h3>
+
+    <div class="steps__wrap">
+      <div class="step step__white">
+        <span class="step_num step_num-black">01</span>
+        <span class="step_title step_num-black">Оставляете <br> заявку</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="111" height="12" viewBox="0 0 111 12" fill="none">
+          <path d="M111 6L101 0.226497V11.7735L111 6ZM0 7H102V5H0V7Z" fill="black"/>
+        </svg>
+      </div>
+      <div class="step step__gray">
+        <span class="step_num">02</span>
+        <span class="step_title step_title-gray">Подготовка</span>
+        <p class="step_description">
+          Мы собираем необходимую информацию <br>
+          о компании, проводим анализ данных, <br>
+          выстраиваем стратегию работы.
+        </p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="111" height="12" viewBox="0 0 111 12" fill="none">
+          <path d="M111 6L101 0.226497V11.7735L111 6ZM0 7H102V5H0V7Z" fill="white"/>
+        </svg>
+      </div>
+      <div class="step step__violet">
+        <span class="step_num">03</span>
+        <span class="step_title">Оставляете <br> заявку</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="111" height="12" viewBox="0 0 111 12" fill="none">
+          <path d="M111 6L101 0.226497V11.7735L111 6ZM0 7H102V5H0V7Z" fill="white"/>
+        </svg>
+      </div>
+      <div class="step step__green">
+        <span class="step_num">04</span>
+        <span class="step_title">Оставляете <br> заявку</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="111" height="12" viewBox="0 0 111 12" fill="none">
+          <path d="M111 6L101 0.226497V11.7735L111 6ZM0 7H102V5H0V7Z" fill="white"/>
+        </svg>
+      </div>
+      <div class="step step__orange">
+        <span class="step_num">05</span>
+        <span class="step_title">Оставляете <br> заявку</span>
+        <svg class="step_done" xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+          <path d="M5.32464 12C5.03844 12 4.76908 11.8896 4.56706 11.7004L0.307784 7.71145C0.0384222 7.45919 -0.0625883 7.09655 0.0384222 6.74968C0.139433 6.40282 0.425629 6.13478 0.796001 6.04018C1.16637 5.94558 1.55358 6.04018 1.82294 6.29245L5.29097 9.54039L14.1462 0.33263C14.3987 0.0645961 14.786 -0.0457708 15.1563 0.017296C15.5267 0.0961296 15.8297 0.348397 15.9476 0.679498C16.0654 1.02637 15.9812 1.389 15.7287 1.65703L6.13272 11.6531C5.9307 11.8581 5.66134 11.9685 5.37514 11.9842L5.32464 12Z" fill="white"/>
+        </svg>
+      </div>
+    </div>
+    <a href="#" class="help__section-btn steps_btn">Привлечь инвестиции</a>
   </section>
 </template>
 <style scoped>

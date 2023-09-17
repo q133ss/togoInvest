@@ -61,6 +61,11 @@ $layoutWidth: 1186px;
   src: url("/fonts/Inter.ttf") format("ttf");
 }
 
+@font-face {
+  font-family: "Circe";
+  src: url("/fonts/Circe-Bold.ttf") format("ttf");
+}
+
 .container{
   width: $layoutWidth;
   margin: 0 auto;
@@ -357,8 +362,9 @@ $layoutWidth: 1186px;
 #radius-2::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  background-color: #FFBA6E;
-  border: 0px solid #FFBA6E;
+  //background-color: #FFBA6E;
+  background-color: #ffffff;
+  border: 3px solid #FFBA6E;
   border-radius: 50%;
   height: 16px;
   width: 16px;
@@ -610,4 +616,96 @@ $layoutWidth: 1186px;
 
 .calc__plus_label{
   margin-top: 8px;
+}
+
+// Steps
+
+.steps__title{
+  margin-top: 130px;
+  margin-bottom: 40px;
+}
+
+.steps__wrap{
+  display: flex;
+  gap: 5px;
+  margin-bottom: 47px;
+}
+
+.step{
+  border-radius: 10px 60px 10px 10px;
+  display: grid;
+  justify-content: center;
+  padding: 23px 39px;
+}
+
+.step_num{
+  color: #FFFFFF;
+  font-family: "Arial", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px; /* 93.75% */
+  margin-bottom: 27px;
+}
+
+.step_num-black{
+  color: #161616!important;
+}
+
+.step_title{
+  color: #FFFFFF;
+  font-family: "Circe", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 118.182% */
+  margin-bottom: 69px;
+}
+
+.step_title-gray{
+  margin-bottom: 15px;
+}
+
+.step_description{
+  color: #F5F5F5;
+  font-family: "Arial", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 32px;
+}
+
+.step_done{
+  background-color: #40AB91;
+  padding: 11px 10px;
+  border-radius: 100%;
+  display: flex;
+  justify-self: end;
+}
+
+.step__white{
+  border: 2px solid #C1C1C1;
+  background-color: #FFFFFF;
+}
+
+.step__gray{
+  background-color: #4C504B;
+}
+
+.step__violet{
+  background-color: #3F3445;
+}
+
+.step__green{
+  background-color: #40AB91;
+}
+
+.step__orange{
+  background-color: #FFBA6E;
+}
+
+.steps_btn{
+  width: 277px;
+  text-transform: uppercase;
 }
