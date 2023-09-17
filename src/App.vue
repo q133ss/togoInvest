@@ -396,6 +396,246 @@ import Header from "./components/Header.vue";
     </div>
     </div>
   </section>
+
+  <section class="programs container">
+    <div class="programs_header">
+      <h3 class="programs_title">
+        Кредитные программы
+      </h3>
+      <div class="programs_selector">
+        <span class="programs_selector-item active">
+          Кампаниям
+        </span>
+        <span class="programs_selector-item">
+          ИП
+        </span>
+        <span class="programs_selector-item">
+          Физическим лицам
+        </span>
+      </div>
+    </div>
+
+    <div class="programs_wrap">
+      <div class="program">
+        <div class="program_wrap">
+        <div class="program_header">
+          <h4 class="program_title">
+            Экспресс кредит
+          </h4>
+          <span class="program_bid">
+            от 4.4%
+            <span class="program_bid_old">
+              от 15%
+            </span>
+          </span>
+
+          <div class="program_terms">
+            <span class="program_term_title">
+              Условия получения
+            </span>
+            <span class="program_term">Компании более года</span>
+            <span class="program_term">Нет текущих просрочек</span>
+            <span class="program_term">Без обеспечения</span>
+          </div>
+        </div>
+        <div class="program_body">
+          <div class="program_item">
+            <div class="program_item-title">
+              Сумма кредита
+            </div>
+
+            <div class="program_item-price">
+              1 000 000 - 15 000 000 ₽
+            </div>
+
+            <div class="program_item-subtitle">
+              онлайн-решение за 1 минуту
+            </div>
+          </div>
+
+          <div class="program_item">
+            <div class="program_item-title">
+              Срок кредита
+            </div>
+
+            <div class="program_item-price">
+              до 5 лет
+            </div>
+
+            <div class="program_item-subtitle">
+              с возможностью досрочного погашения
+            </div>
+          </div>
+
+          <div class="program_item">
+            <div class="program_item-title">
+              Бесплатно
+            </div>
+
+            <div class="program_item-insurance">
+              <svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30" fill="none">
+                <path d="M15.4578 28.0828C8.24375 28.0828 2.375 22.2141 2.375 15C2.375 7.78592 8.24375 1.91718 15.4578 1.91718C17.5813 1.91718 19.6887 2.43749 21.5544 3.42093C22.2388 3.7828 22.5012 4.6303 22.1403 5.31561C21.7794 6.00093 20.9328 6.26343 20.2456 5.90155C18.7822 5.12905 17.1266 4.72124 15.4578 4.72124C9.78969 4.72124 5.17812 9.33186 5.17812 15C5.17812 20.6681 9.78875 25.2787 15.4569 25.2787C21.125 25.2787 25.7366 20.6681 25.7366 15C25.7366 14.3522 25.6766 13.7044 25.5575 13.0772C25.4131 12.3169 25.9128 11.5828 26.6731 11.4384C27.4334 11.2931 28.1675 11.7947 28.3109 12.5541C28.4628 13.3537 28.5397 14.1759 28.5397 14.9991C28.5406 22.2141 22.6709 28.0828 15.4578 28.0828Z" fill="#52A516"/>
+                <path d="M14.0956 20.1684C13.7244 20.1684 13.3662 20.0194 13.1028 19.7569L9.15875 15.8006C8.61218 15.2522 8.61406 14.3653 9.16156 13.8178C9.71 13.2712 10.5969 13.2722 11.1444 13.8206L14.0975 16.7831L26.2325 4.65187C26.78 4.10437 27.6678 4.10437 28.2153 4.65187C28.7619 5.19937 28.7619 6.08718 28.2153 6.63374L15.0875 19.7587C14.8241 20.0203 14.4669 20.1684 14.0956 20.1684Z" fill="#52A516"/>
+              </svg>
+              Отказ от страховки
+            </div>
+
+            <div class="program_item-subtitle">
+              экономия до 30% от суммы кредита
+            </div>
+          </div>
+        </div>
+        </div>
+        <a href="#" class="help__section-btn program_btn">Получить кредит</a>
+      </div>
+
+      <div class="program">
+        <div class="program_wrap">
+          <div class="program_header">
+            <h4 class="program_title">
+              Экспресс кредит
+            </h4>
+            <span class="program_bid">
+            от 4.4%
+            <span class="program_bid_old">
+              от 15%
+            </span>
+          </span>
+
+            <div class="program_terms">
+            <span class="program_term_title">
+              Условия получения
+            </span>
+              <span class="program_term">Компании более года</span>
+              <span class="program_term">Нет текущих просрочек</span>
+              <span class="program_term">Без обеспечения</span>
+            </div>
+          </div>
+          <div class="program_body">
+            <div class="program_item">
+              <div class="program_item-title">
+                Сумма кредита
+              </div>
+
+              <div class="program_item-price">
+                1 000 000 - 15 000 000 ₽
+              </div>
+
+              <div class="program_item-subtitle">
+                онлайн-решение за 1 минуту
+              </div>
+            </div>
+
+            <div class="program_item">
+              <div class="program_item-title">
+                Срок кредита
+              </div>
+
+              <div class="program_item-price">
+                до 5 лет
+              </div>
+
+              <div class="program_item-subtitle">
+                с возможностью досрочного погашения
+              </div>
+            </div>
+
+            <div class="program_item">
+              <div class="program_item-title">
+                Бесплатно
+              </div>
+
+              <div class="program_item-insurance">
+                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30" fill="none">
+                  <path d="M15.4578 28.0828C8.24375 28.0828 2.375 22.2141 2.375 15C2.375 7.78592 8.24375 1.91718 15.4578 1.91718C17.5813 1.91718 19.6887 2.43749 21.5544 3.42093C22.2388 3.7828 22.5012 4.6303 22.1403 5.31561C21.7794 6.00093 20.9328 6.26343 20.2456 5.90155C18.7822 5.12905 17.1266 4.72124 15.4578 4.72124C9.78969 4.72124 5.17812 9.33186 5.17812 15C5.17812 20.6681 9.78875 25.2787 15.4569 25.2787C21.125 25.2787 25.7366 20.6681 25.7366 15C25.7366 14.3522 25.6766 13.7044 25.5575 13.0772C25.4131 12.3169 25.9128 11.5828 26.6731 11.4384C27.4334 11.2931 28.1675 11.7947 28.3109 12.5541C28.4628 13.3537 28.5397 14.1759 28.5397 14.9991C28.5406 22.2141 22.6709 28.0828 15.4578 28.0828Z" fill="#52A516"/>
+                  <path d="M14.0956 20.1684C13.7244 20.1684 13.3662 20.0194 13.1028 19.7569L9.15875 15.8006C8.61218 15.2522 8.61406 14.3653 9.16156 13.8178C9.71 13.2712 10.5969 13.2722 11.1444 13.8206L14.0975 16.7831L26.2325 4.65187C26.78 4.10437 27.6678 4.10437 28.2153 4.65187C28.7619 5.19937 28.7619 6.08718 28.2153 6.63374L15.0875 19.7587C14.8241 20.0203 14.4669 20.1684 14.0956 20.1684Z" fill="#52A516"/>
+                </svg>
+                Отказ от страховки
+              </div>
+
+              <div class="program_item-subtitle">
+                экономия до 30% от суммы кредита
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="help__section-btn program_btn">Получить кредит</a>
+      </div>
+
+      <div class="program">
+        <div class="program_wrap">
+          <div class="program_header">
+            <h4 class="program_title">
+              Экспресс кредит
+            </h4>
+            <span class="program_bid">
+            от 4.4%
+            <span class="program_bid_old">
+              от 15%
+            </span>
+          </span>
+
+            <div class="program_terms">
+            <span class="program_term_title">
+              Условия получения
+            </span>
+              <span class="program_term">Компании более года</span>
+              <span class="program_term">Нет текущих просрочек</span>
+              <span class="program_term">Без обеспечения</span>
+            </div>
+          </div>
+          <div class="program_body">
+            <div class="program_item">
+              <div class="program_item-title">
+                Сумма кредита
+              </div>
+
+              <div class="program_item-price">
+                1 000 000 - 15 000 000 ₽
+              </div>
+
+              <div class="program_item-subtitle">
+                онлайн-решение за 1 минуту
+              </div>
+            </div>
+
+            <div class="program_item">
+              <div class="program_item-title">
+                Срок кредита
+              </div>
+
+              <div class="program_item-price">
+                до 5 лет
+              </div>
+
+              <div class="program_item-subtitle">
+                с возможностью досрочного погашения
+              </div>
+            </div>
+
+            <div class="program_item">
+              <div class="program_item-title">
+                Бесплатно
+              </div>
+
+              <div class="program_item-insurance">
+                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30" fill="none">
+                  <path d="M15.4578 28.0828C8.24375 28.0828 2.375 22.2141 2.375 15C2.375 7.78592 8.24375 1.91718 15.4578 1.91718C17.5813 1.91718 19.6887 2.43749 21.5544 3.42093C22.2388 3.7828 22.5012 4.6303 22.1403 5.31561C21.7794 6.00093 20.9328 6.26343 20.2456 5.90155C18.7822 5.12905 17.1266 4.72124 15.4578 4.72124C9.78969 4.72124 5.17812 9.33186 5.17812 15C5.17812 20.6681 9.78875 25.2787 15.4569 25.2787C21.125 25.2787 25.7366 20.6681 25.7366 15C25.7366 14.3522 25.6766 13.7044 25.5575 13.0772C25.4131 12.3169 25.9128 11.5828 26.6731 11.4384C27.4334 11.2931 28.1675 11.7947 28.3109 12.5541C28.4628 13.3537 28.5397 14.1759 28.5397 14.9991C28.5406 22.2141 22.6709 28.0828 15.4578 28.0828Z" fill="#52A516"/>
+                  <path d="M14.0956 20.1684C13.7244 20.1684 13.3662 20.0194 13.1028 19.7569L9.15875 15.8006C8.61218 15.2522 8.61406 14.3653 9.16156 13.8178C9.71 13.2712 10.5969 13.2722 11.1444 13.8206L14.0975 16.7831L26.2325 4.65187C26.78 4.10437 27.6678 4.10437 28.2153 4.65187C28.7619 5.19937 28.7619 6.08718 28.2153 6.63374L15.0875 19.7587C14.8241 20.0203 14.4669 20.1684 14.0956 20.1684Z" fill="#52A516"/>
+                </svg>
+                Отказ от страховки
+              </div>
+
+              <div class="program_item-subtitle">
+                экономия до 30% от суммы кредита
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="help__section-btn program_btn">Получить кредит</a>
+      </div>
+    </div>
+  </section>
 </template>
 <style scoped>
 </style>
