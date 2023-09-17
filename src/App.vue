@@ -687,13 +687,127 @@ import Header from "./components/Header.vue";
     </div>
     </div>
   </section>
+
+  <section class="history container">
+    <h3 class="programs_title">истории наших клиентов</h3>
+
+    <div class="history_wrap">
+      <div class="history_btns">
+        <div class="history_left_btn history_btn prev-button" @click="goToPrevSlide">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.9332 9.1L9.01431 14.1811L7.6001 15.5953L0.104797 8.1L7.6001 0.604697L9.01431 2.0189L3.9332 7.1L15.0954 7.1L15.0954 9.1L3.9332 9.1Z" fill="#10273D" fill-opacity="0.3"/>
+          </svg>
+        </div>
+
+        <div class="history_right_btn history_btn next-button" @click="goToNextSlide">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0668 6.9L6.98566 1.81888L8.39987 0.404663L15.8952 7.9L8.39987 15.3953L6.98566 13.9811L12.0668 8.9H0.904541V6.9H12.0668Z" fill="#40AB91"/>
+          </svg>
+        </div>
+      </div>
+
+      <swiper
+          :slides-per-view="2"
+          :space-between="28"
+          :navigation="{
+            prevEl: prev,
+            nextEl: next,
+          }"
+      >
+        <swiper-slide>
+          <div class="history_slider_wrap">
+            <p class="history_text">
+              Основатель сервиса по продвижению на маркетплейсах MPLAB,  10 тыс. + пользователей.Александр обратился с запросом привлечения инвестиций в свою IT компанию.По факту проделанной работы через 3 дня мы привлекли Александру 5 миллионов рублей и взаимодействуем далее, выстроили долгосрочную стратегию по привлечению средств.
+            </p>
+            <div class="history_author-wrap">
+              <span class="history_author">
+                Павел
+              </span>
+              <span class="history_job">
+                ИП в сфере дистрибуции
+              </span>
+            </div>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide>
+          <div class="history_slider_wrap">
+            <p class="history_text">
+              Основатель сервиса по продвижению на маркетплейсах MPLAB,  10 тыс. + пользователей.Александр обратился с запросом привлечения инвестиций в свою IT компанию.По факту проделанной работы через 3 дня мы привлекли Александру 5 миллионов рублей и взаимодействуем далее, выстроили долгосрочную стратегию по привлечению средств.
+            </p>
+
+            <div class="history_author-wrap">
+              <span class="history_author">
+                Павел
+              </span>
+              <span class="history_job">
+                ИП в сфере дистрибуции
+              </span>
+            </div>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide>
+          <div class="history_slider_wrap">
+            <p class="history_text">
+              Основатель сервиса по продвижению на маркетплейсах MPLAB,  10 тыс. + пользователей.Александр обратился с запросом привлечения инвестиций в свою IT компанию.По факту проделанной работы через 3 дня мы привлекли Александру 5 миллионов рублей и взаимодействуем далее, выстроили долгосрочную стратегию по привлечению средств.
+            </p>
+            <div class="history_author-wrap">
+              <span class="history_author">
+                Павел
+              </span>
+              <span class="history_job">
+                ИП в сфере дистрибуции
+              </span>
+            </div>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide>
+          <div class="history_slider_wrap">
+            <p class="history_text">
+              Основатель сервиса по продвижению на маркетплейсах MPLAB,  10 тыс. + пользователей.Александр обратился с запросом привлечения инвестиций в свою IT компанию.По факту проделанной работы через 3 дня мы привлекли Александру 5 миллионов рублей и взаимодействуем далее, выстроили долгосрочную стратегию по привлечению средств.
+            </p>
+            <div class="history_author-wrap">
+              <span class="history_author">
+                Павел
+              </span>
+              <span class="history_job">
+                ИП в сфере дистрибуции
+              </span>
+            </div>
+          </div>
+        </swiper-slide>
+      </swiper>
+    </div>
+  </section>
 </template>
 <style scoped>
 </style>
 <script>
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
 export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  mounted() {
+
+  },
+  setup() {
+
+  },
   data() {
     return {}
-  }
+  },
+  methods: {
+    goToPrevSlide() {
+      this.swiper.slidePrev();
+    },
+    goToNextSlide() {
+      this.swiper.slideNext();
+    },
+  },
 };
 </script>

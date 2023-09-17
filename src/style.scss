@@ -832,6 +832,8 @@ $layoutWidth: 1186px;
   line-height: 47px; /* 146.875% */
   letter-spacing: 1.5px;
   text-transform: uppercase;
+  margin-top: 130px;
+  margin-bottom: 40px;
 }
 
 .programs_selector{
@@ -1015,4 +1017,63 @@ $layoutWidth: 1186px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+// History
+
+.history_wrap{
+  display: flex;
+  gap: 118px;
+}
+
+.history_btns{
+  display: flex;
+  gap: 8px;
+}
+
+.history_btn svg{
+  padding: 24px;
+  border-radius: 64px;
+  background: #F2F4F8;
+}
+
+.history_slider_wrap{
+  padding: 44px 29px;
+  border-radius: 20px 50px 20px 20px;
+  border: 1px solid #9A9A9A;
+  background: #FFF;
+}
+
+.history_text{
+  color: #10273D;
+  font-family: "Inter", sans-serif;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 152.632% */
+}
+
+.history_author-wrap{
+  display: flex;
+  flex-direction: column;
+}
+
+.history_author{
+  color: #10273D;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 120% */
+  margin-top: 70px;
+}
+
+.history_job{
+  color: rgba(16, 39, 61, 0.50);
+  font-family: "Inter", sans-serif;
+  font-size: 13.4px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15.84px; /* 118.209% */
+  letter-spacing: 0.288px;
 }
