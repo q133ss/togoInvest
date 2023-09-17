@@ -871,8 +871,12 @@ $layoutWidth: 1186px;
 
 .programs_wrap{
   margin-top: 40px;
-  display: flex;
   gap: 23px;
+  display: none;
+}
+
+.show{
+  display: flex;
 }
 
 .program{
