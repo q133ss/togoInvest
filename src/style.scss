@@ -431,6 +431,10 @@ $layoutWidth: 1186px;
   line-height: 20px; /* 166.667% */
 }
 
+.calc_main-block{
+  max-width: 700px;
+}
+
 .calculator__section-range--labels_date{
   width: 60%;
 }
@@ -450,8 +454,63 @@ $layoutWidth: 1186px;
   width: 40%;
 }
 
+.calc_row{
+  display: flex;
+  gap: 56px;
+}
+
+.calc_btns{
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  height: 100%;
+  margin-top: 51px;
+}
+
+.calc_btns button{
+  border-radius: 8px;
+  background: #40AB91;
+  padding: 9px 16px;
+
+  box-shadow: none;
+
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+  border: none;
+  cursor: pointer;
+
+  color: #FFF;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.5px;
+}
+
+.calc__result_block{
+  width: 20%;
+  border: 1px solid #E7E8EA;
+  border-radius: 4px;
+  padding: 25px;
+}
+
 #totalSum{
   margin-top: 12px;
+}
+
+.chart_btn{
+  background: #FFBA6E;
+  font-size: 14px;
+  padding: 16px 24px;
+}
+
+.get_credit_btn{
+  font-size: 14px;
+  padding: 16px 24px;
 }
 
 @media screen and (max-width: 1440px){
@@ -471,10 +530,9 @@ $layoutWidth: 1186px;
   border-radius: 8px;
   border: 1px solid #ECF1F7;
   background: #ECF1F7;
-  padding: 9px 16px;
+  padding: 5px 16px;
   width: 100%;
 
-  margin-top: 21px;
   margin-bottom: 21px;
 
   color: rgba(0, 0, 0, 0.54);
@@ -488,6 +546,10 @@ $layoutWidth: 1186px;
   background-repeat: no-repeat;
   background-position-x: 99%;
   background-position-y: 50%;
+}
+
+.credit_description span{
+  font-weight: 900;
 }
 
 .calculator__contact_fio_wrap{

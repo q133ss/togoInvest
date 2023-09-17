@@ -41,103 +41,190 @@ import Footer from "./components/Footer.vue";
       Увеличьте свой капитал <br> и достигайте финансовых вершин
     </h3>
     <div class="calculator__section-wrap">
-      <div class="calculator__section-main--block-wrap">
-      <div class="calculator__section-header">
+<!--      <div class="calculator__section-main&#45;&#45;block-wrap">-->
+<!--      <div class="calculator__section-header">-->
+<!--        <h4 class="calculator__section-header&#45;&#45;title">Выберите сумму и срок кредита</h4>-->
+<!--        <span class="calculator__section-header&#45;&#45;steps">Шаг 1 из 4</span>-->
+<!--      </div>-->
+<!--      <div class="calculator__section-main&#45;&#45;block">-->
+<!--        <h5 class="calculator__section-subheader">Желаемая сумма кредита</h5>-->
+<!--        <div class="calculator__section-sum" id="calc_sum">-->
+<!--          {{sum}} ₽-->
+<!--          <img src="/img/SVG.svg" alt="" class="calculator__section-edit&#45;&#45;icon">-->
+<!--        </div>-->
+<!--        <input type="range" v-model="sum" @change="calc" class="calculator__section-range" id="radius" step="50000" min="50000" max="5000000">-->
+<!--        <div class="calculator__section-range&#45;&#45;labels">-->
+<!--          <span class="calculator__section-range&#45;&#45;label">50 000 ₽</span>-->
+<!--          <span class="calculator__section-range&#45;&#45;label">1 600 000 ₽</span>-->
+<!--          <span class="calculator__section-range&#45;&#45;label">3 200 000 ₽</span>-->
+<!--          <span class="calculator__section-range&#45;&#45;label">5 000 000 ₽</span>-->
+<!--        </div>-->
+<!--        <div class="calculator__section-term&#45;&#45;wrap">-->
+<!--          <div class="calculator__section-credit&#45;&#45;term">-->
+<!--            <h5 class="calculator__section-subheader">Срок кредита</h5>-->
+<!--            <div class="calculator__section-sum calculator__section-date">-->
+<!--              {{years}} лет-->
+<!--              <img src="/img/SVG.svg" alt="" class="calculator__section-edit&#45;&#45;icon">-->
+<!--            </div>-->
+<!--            <input type="range" v-model="years" @change="calc" class="calculator__section-range calculator__section-range&#45;&#45;date" id="radius" min="1" max="5">-->
+<!--            <div class="calculator__section-range&#45;&#45;labels">-->
+<!--              <span class="calculator__section-range&#45;&#45;label">1 год</span>-->
+<!--              <span class="calculator__section-range&#45;&#45;label">5 лет</span>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="calculator__section-payment">-->
+<!--            <h5 class="calculator__section-subheader">Ежемесячный платеж</h5>-->
+<!--            <div class="calculator__section-sum" id="totalSum">-->
+<!--              {{result}} ₽-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      <select name="" id="" class="calc_target">-->
+<!--        <option value="" disabled selected>Цель кредита*</option>-->
+<!--        <option value="">Цель</option>-->
+<!--        <option value="">Цель</option>-->
+<!--      </select>-->
+
+<!--      <h4 class="calculator__section-header&#45;&#45;title">Контактная информация</h4>-->
+<!--      <div class="calculator__contact_fio_wrap">-->
+<!--        <input type="text" class="calculator__contact_fio_input" placeholder="Фамилия, имя и отчество*">-->
+<!--        <div class="calculator__contact_fio_label">-->
+<!--          +20% к одобрению-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      <div class="calc__fields_wrap">-->
+<!--        <input type="text" placeholder="Мобильный телефон*" class="calc_field">-->
+<!--        <input type="text" placeholder="Электронная почта" class="calc_field">-->
+<!--      </div>-->
+
+<!--      <div class="calc__footer">-->
+<!--        <hr>-->
+<!--        <div class="calc__footer-content&#45;&#45;wrap">-->
+<!--          <span class="calc__footer-text">-->
+<!--            Заполняя форму, я принимаю-->
+<!--            <a href="#" class="calc__footer-link">условия передачи информации</a>-->
+<!--          </span>-->
+<!--          <a href="#" class="help__section-btn calc__footer_btn">Оформить</a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      </div>-->
+
+<!--      <div class="calc__result_block">-->
+<!--        <div class="calc_result_wrap">-->
+<!--          <h5 class="calculator__section-subheader">-->
+<!--            Вы выбрали кредит на сумму-->
+<!--          </h5>-->
+<!--          <div class="calculator__section-sum" id="calc_sum"> {{sum}} ₽</div>-->
+
+<!--          <h5 class="calculator__section-subheader calc__res_title">-->
+<!--            На срок-->
+<!--          </h5>-->
+<!--          <div class="calculator__section-sum" id="calc_sum"> {{years}} лет </div>-->
+
+<!--          <h5 class="calculator__section-subheader calc__res_title">-->
+<!--            Вероятность одобрения кредита-->
+<!--          </h5>-->
+<!--          <div class="calculator__section-sum" id="calc_sum"> 5% </div>-->
+
+<!--          <div class="calc_res__progress_bar">-->
+<!--            <div class="calc_res_bar__current"></div>-->
+<!--            <div class="calc_res_bar__plus"></div>-->
+<!--            <div class="calc_res_bar__place"></div>-->
+<!--          </div>-->
+<!--          <h5 class="calculator__section-subheader calc__plus_label">-->
+<!--            +50% за 1-й шаг-->
+<!--          </h5>-->
+<!--        </div>-->
+<!--      </div>-->
+
+      <div class="calc_main-block">
         <h4 class="calculator__section-header--title">Выберите сумму и срок кредита</h4>
-        <span class="calculator__section-header--steps">Шаг 1 из 4</span>
-      </div>
-      <div class="calculator__section-main--block">
-        <h5 class="calculator__section-subheader">Желаемая сумма кредита</h5>
-        <div class="calculator__section-sum" id="calc_sum">
-          450 000 ₽
-          <img src="/img/SVG.svg" alt="" class="calculator__section-edit--icon">
-        </div>
-        <input type="range" class="calculator__section-range" id="radius" min="50000" max="5000000">
-        <div class="calculator__section-range--labels">
-          <span class="calculator__section-range--label">50 000 ₽</span>
-          <span class="calculator__section-range--label">300 000 ₽</span>
-          <span class="calculator__section-range--label">1 000 000 ₽</span>
-          <span class="calculator__section-range--label">5 000 000 ₽</span>
-        </div>
-        <div class="calculator__section-term--wrap">
-          <div class="calculator__section-credit--term">
-            <h5 class="calculator__section-subheader">Срок кредита</h5>
-            <div class="calculator__section-sum calculator__section-date">
-              5 лет
-              <img src="/img/SVG.svg" alt="" class="calculator__section-edit--icon">
-            </div>
-            <input type="range" class="calculator__section-range calculator__section-range--date" id="radius" min="1" max="5">
-            <div class="calculator__section-range--labels">
-              <span class="calculator__section-range--label">1 год</span>
-              <span class="calculator__section-range--label">5 лет</span>
-            </div>
+        <div class="calc_row">
+          <div class="calc_input">
+            <h5 class="calculator__section-subheader calc__res_title">Желаемая сумма кредита</h5>
+            <input type="text" placeholder="₽" class="calc_field" value="1000000">
           </div>
-          <div class="calculator__section-payment">
-            <h5 class="calculator__section-subheader">Ежемесячный платеж</h5>
-            <div class="calculator__section-sum" id="totalSum">
-              9 650 ₽
-            </div>
+          <div class="calc_btns">
+            <button type="button">1 млн. ₽</button>
+            <button type="button">3 млн. ₽</button>
+            <button type="button">5 млн. ₽</button>
           </div>
         </div>
-      </div>
 
-      <select name="" id="" class="calc_target">
-        <option value="" disabled selected>Цель кредита*</option>
-        <option value="">Цель</option>
-        <option value="">Цель</option>
-      </select>
-
-      <h4 class="calculator__section-header--title">Контактная информация</h4>
-      <div class="calculator__contact_fio_wrap">
-        <input type="text" class="calculator__contact_fio_input" placeholder="Фамилия, имя и отчество*">
-        <div class="calculator__contact_fio_label">
-          +20% к одобрению
+        <div class="calc_row">
+          <div class="calc_input">
+            <h5 class="calculator__section-subheader calc__res_title">Срок кредита (мес.)</h5>
+            <input type="text" placeholder="Мес." class="calc_field" value="">
+          </div>
+          <div class="calc_btns">
+            <button type="button">5 лет</button>
+            <button type="button">7 лет</button>
+            <button type="button">20 лет</button>
+            <button type="button">30 лет</button>
+          </div>
         </div>
-      </div>
 
-      <div class="calc__fields_wrap">
-        <input type="text" placeholder="Мобильный телефон*" class="calc_field">
-        <input type="text" placeholder="Электронная почта" class="calc_field">
-      </div>
-
-      <div class="calc__footer">
-        <hr>
-        <div class="calc__footer-content--wrap">
-          <span class="calc__footer-text">
-            Заполняя форму, я принимаю
-            <a href="#" class="calc__footer-link">условия передачи информации</a>
-          </span>
-          <a href="#" class="help__section-btn calc__footer_btn">Оформить</a>
+        <div class="calc_row">
+          <div class="calc_input">
+            <h5 class="calculator__section-subheader calc__res_title">Годовая ставка (%)</h5>
+            <input type="text" placeholder="%" class="calc_field" value="3">
+          </div>
+          <div class="calc_btns">
+            <button type="button">3 %</button>
+            <button type="button">8 %</button>
+            <button type="button">10 %</button>
+            <button type="button">12 %</button>
+            <button type="button">16 %</button>
+          </div>
         </div>
-      </div>
-      </div>
 
+        <h4 class="calculator__section-header--title">Дополнительные параметры</h4>
+
+        <div class="calc_row">
+          <div class="calc_input">
+            <h5 class="calculator__section-subheader calc__res_title">Вид платежа</h5>
+            <select name="" class="calc_target" id="">
+              <option value="Аннуитетные">Аннуитетные</option>
+              <option value="Дифференцированный">Дифференцированный</option>
+            </select>
+          </div>
+
+          <div class="credit_date">
+            <h5 class="calculator__section-subheader calc__res_title">Дата получения кредита</h5>
+            <input type="text" placeholder="%" class="calc_field" value="17.09.2023">
+          </div>
+        </div>
+
+          <p class="calculator__section-subheader credit_description">
+            <span>Аннуитетные</span> платежи одинаковы, но соотношение в них основного долга и процентов — разное. Здесь проценты за пользование начисляются на остаток долга, поэтому в начале кредита — процентов больше, основного долга — меньше. А к концу кредита — наоборот.
+          </p>
+          <br>
+          <p class="calculator__section-subheader credit_description">
+            <span>Дифференцированный</span> платеж это система погашения кредита, при которой заемщик ежемесячно вносит разные суммы, размер которых с каждым разом уменьшается.
+          </p>
+      </div>
       <div class="calc__result_block">
         <div class="calc_result_wrap">
-          <h5 class="calculator__section-subheader">
-            Вы выбрали кредит на сумму
-          </h5>
-          <div class="calculator__section-sum" id="calc_sum"> 450 000 ₽</div>
+            <h5 class="calculator__section-subheader">
+              Ежемесячный платеж
+            </h5>
+            <div class="calculator__section-sum" id="calc_sum"> {{sum}} ₽</div>
 
-          <h5 class="calculator__section-subheader calc__res_title">
-            На срок
-          </h5>
-          <div class="calculator__section-sum" id="calc_sum"> 5 лет </div>
+            <h5 class="calculator__section-subheader calc__res_title">
+              Переплата по процентам за кредит
+            </h5>
+            <div class="calculator__section-sum" id="calc_sum"> 7 500 ₽ </div>
 
-          <h5 class="calculator__section-subheader calc__res_title">
-            Вероятность одобрения кредита
-          </h5>
-          <div class="calculator__section-sum" id="calc_sum"> 5% </div>
-
-          <div class="calc_res__progress_bar">
-            <div class="calc_res_bar__current"></div>
-            <div class="calc_res_bar__plus"></div>
-            <div class="calc_res_bar__place"></div>
-          </div>
-          <h5 class="calculator__section-subheader calc__plus_label">
-            +50% за 1-й шаг
-          </h5>
+            <h5 class="calculator__section-subheader calc__res_title">
+              Эффективная процентная ставка
+            </h5>
+            <div class="calculator__section-sum" id="calc_sum"> 3 % </div>
         </div>
+        <a href="#" class="help__section-btn chart_btn">График платежей</a>
+        <a href="#" class="help__section-btn get_credit_btn">Получить кредит</a>
       </div>
     </div>
   </section>
@@ -1245,6 +1332,10 @@ export default {
   },
   data() {
     return {
+      sum: 450000,
+      years: 5,
+      result: 0,
+      percent: 3,
       swiper: null,
     };
   },
@@ -1257,6 +1348,10 @@ export default {
       document.querySelectorAll('.programs_wrap')
           .forEach(n => n.classList.remove('show'));
       document.querySelector('#'+type).classList.add('show');
+    },
+    calc(){
+      let kp = this.years/12;
+      this.result = (this.sum/kp) + (this.sum*this.percent)/12;
     },
     onSwiper(swiper) {
       this.swiper = swiper;
