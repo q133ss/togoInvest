@@ -506,11 +506,15 @@ $layoutWidth: 1186px;
   background: #FFBA6E;
   font-size: 14px;
   padding: 16px 24px;
+  border: none;
+  cursor: pointer;
 }
 
 .get_credit_btn{
   font-size: 14px;
+  border: none;
   padding: 16px 24px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1440px){
@@ -1490,4 +1494,30 @@ footer .container .footer_header-wrap:nth-child(2){
   .calculator__section-wrap{
     padding: 50px 65px 20px 20px;
   }
+}
+
+.request{
+  position: fixed;
+  top: 0;
+  background: #FFFFFF;
+  padding: 50px;
+  height: 100%;
+}
+
+.req-title span{
+  color: #FFBA6E;
+}
+
+.request #close{
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+}
+
+.req_row{
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
 }

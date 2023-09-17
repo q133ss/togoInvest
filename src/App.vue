@@ -223,8 +223,8 @@ import Footer from "./components/Footer.vue";
             </h5>
             <div class="calculator__section-sum" id="calc_sum"> 3 % </div>
         </div>
-        <a href="#" class="help__section-btn chart_btn">График платежей</a>
-        <a href="#" class="help__section-btn get_credit_btn">Получить кредит</a>
+        <button type="button" class="help__section-btn chart_btn">График платежей</button>
+        <button type="button" class="help__section-btn get_credit_btn" @click="openForm">Получить кредит</button>
       </div>
     </div>
   </section>
@@ -1313,6 +1313,38 @@ import Footer from "./components/Footer.vue";
     </div>
   </section>
   <Footer></Footer>
+
+  <div class="request" v-show="open">
+    <span id="close" @click="formClose">X</span>
+    <div class="req-title help__section-title">
+      Заполните заявку и наш <br>
+      менеджер свяжется с вами <br>
+      <span>в течение 10 минут!</span>
+    </div>
+
+    <div class="req-form">
+      <div class="req_row">
+        <h5 class="calculator__section-subheader calc__res_title">Имя*</h5>
+        <input type="text" placeholder="" class="calc_field">
+      </div>
+      <div class="req_row">
+        <h5 class="calculator__section-subheader calc__res_title">Телефон*</h5>
+        <input type="text" placeholder="" class="calc_field">
+      </div>
+      <div class="req_row">
+        <h5 class="calculator__section-subheader calc__res_title">Где вы проживаете?*</h5>
+        <label for="yes">
+          Москва и Московская область
+          <input name="region" id="yes" type="radio">
+        </label>
+        <label for="no">
+          Другой регион
+          <input name="region" id="no" type="radio">
+        </label>
+      </div>
+      <a href="#" class="help__section-btn">Оставить заявку</a>
+    </div>
+  </div>
 </template>
 <style scoped>
 </style>
@@ -1352,6 +1384,7 @@ export default {
       monthlyPayment: 0,
       interestOverpayment: 0, //переплата
       swiper: null,
+      open: false,
     };
   },
   methods: {
@@ -1421,6 +1454,12 @@ export default {
         // округлим до целых
         this.interestOverpayment = totalInterestOverpayment.toFixed();
       }
+    },
+    openForm(){
+      this.open = true;
+    },
+    formClose(){
+      this.open = false;
     },
     setSum(val){
       switch (val){
