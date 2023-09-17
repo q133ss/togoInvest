@@ -709,3 +709,109 @@ $layoutWidth: 1186px;
   width: 277px;
   text-transform: uppercase;
 }
+
+// Wait
+
+.wait{
+  background: #40AB91;
+  margin-top: 130px;
+  padding-bottom: 98px;
+}
+
+.wait_title{
+  color: #FFFFFF;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 47px; /* 146.875% */
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding-top: 98px;
+  padding-bottom: 43px;
+}
+
+.wait_table-raw{
+  display: flex;
+}
+
+.wait_table-header--item{
+  background: #C9FFF2;
+
+  width: 232px;
+  height: 54px;
+
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 47px; /* 235% */
+  letter-spacing: 1.5px;
+  padding: 3px 21px;
+}
+
+.wait_table-header--item:not(:last-child){
+  border-right: 2px solid #D1D1D1;
+}
+
+.wait_table-item{
+  background: #FFF;
+
+  width: 232px;
+  height: 207px;
+
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22px; /* 137.5% */
+  letter-spacing: 1.5px;
+
+  padding: 10px 21px;
+}
+
+.wait_table-item:not(:last-child){
+  border-right: 2px solid #D1D1D1;
+}
+
+.wait_table-raw:not(:last-child) .wait_table-item{
+  border-bottom: 2px solid #D1D1D1;
+}
+
+.wait_stage-wrap{
+  display: flex;
+  gap: 9px;
+  margin-top: 35px;
+}
+
+.wait_stage-item{
+  width: 40px;
+  height: 9px;
+  border-radius: 100px;
+}
+
+.wait_terms-item:not(:last-child){
+  margin-bottom: 17px;
+}
+
+.wait_terms-title{
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 137.5% */
+  letter-spacing: 1.5px;
+}
+
+.wait_terms-value{
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 1.5px;
+}

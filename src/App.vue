@@ -190,15 +190,219 @@ import Header from "./components/Header.vue";
     </div>
     <a href="#" class="help__section-btn steps_btn">Привлечь инвестиции</a>
   </section>
+
+  <section class="wait">
+    <div class="container">
+    <h3 class="wait_title">Оставьте заявку <br>
+      и ожидайте решения</h3>
+
+    <div class="wait_table">
+      <div class="wait_table-header wait_table-raw">
+        <div class="wait_table-header--item">
+          Дата
+        </div>
+        <div class="wait_table-header--item">
+          Заемщик
+        </div>
+        <div class="wait_table-header--item">
+          Сумма кредита
+        </div>
+        <div class="wait_table-header--item">
+          Стадия
+        </div>
+        <div class="wait_table-header--item">
+          Условия кредита
+        </div>
+      </div>
+      <div class="wait_table-raw">
+        <div class="wait_table-item">
+          Сегодня
+        </div>
+        <div class="wait_table-item">
+          Попов Н.Э.
+        </div>
+        <div class="wait_table-item">
+          1 644 000₽
+        </div>
+        <div class="wait_table-item">
+          Процедура андеррайтинга в банке
+          <div class="wait_stage-wrap">
+            <div class="wait_stage-item step__violet"></div>
+            <div class="wait_stage-item step__green"></div>
+            <div class="wait_stage-item step__orange"></div>
+          </div>
+        </div>
+        <div class="wait_table-item">
+          <div class="wait_terms">
+            <div class="wait_terms-item">
+              <div class="wait_terms-title">Банк</div>
+              <div class="wait_terms-value">«СМП Банк»</div>
+            </div>
+            <div class="wait_terms-item">
+              <div class="wait_terms-title">Одобренная сумма</div>
+              <div class="wait_terms-value">1 355 000₽</div>
+            </div>
+            <div class="wait_terms-item">
+              <div class="wait_terms-title">Еж. платеж</div>
+              <div class="wait_terms-value">79 257₽</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wait_table-raw">
+        <div class="wait_table-item">
+          Сегодня
+        </div>
+        <div class="wait_table-item">
+          Попов Н.Э.
+        </div>
+        <div class="wait_table-item">
+          1 644 000₽
+        </div>
+        <div class="wait_table-item">
+          Процедура андеррайтинга в банке
+          <div class="wait_stage-wrap">
+            <div class="wait_stage-item step__violet"></div>
+            <div class="wait_stage-item step__green"></div>
+            <div class="wait_stage-item step__orange"></div>
+          </div>
+        </div>
+        <div class="wait_table-item">
+          <div class="wait_terms">
+            <div class="wait_terms-item">
+              <div class="wait_terms-title">Банк</div>
+              <div class="wait_terms-value">«СМП Банк»</div>
+            </div>
+            <div class="wait_terms-item">
+              <div class="wait_terms-title">Одобренная сумма</div>
+              <div class="wait_terms-value">1 355 000₽</div>
+            </div>
+            <div class="wait_terms-item">
+              <div class="wait_terms-title">Еж. платеж</div>
+              <div class="wait_terms-value">79 257₽</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wait_table-raw">
+        <div class="wait_table-item">
+          Сегодня
+        </div>
+        <div class="wait_table-item">
+          Попов Н.Э.
+        </div>
+        <div class="wait_table-item">
+          1 644 000₽
+        </div>
+        <div class="wait_table-item">
+          Процедура андеррайтинга в банке
+          <div class="wait_stage-wrap">
+            <div class="wait_stage-item step__violet"></div>
+            <div class="wait_stage-item step__green"></div>
+            <div class="wait_stage-item step__orange"></div>
+          </div>
+        </div>
+        <div class="wait_table-item">
+          <div class="wait_terms">
+            <div class="wait_terms-item">
+              <div class="wait_terms-title">Банк</div>
+              <div class="wait_terms-value">«СМП Банк»</div>
+            </div>
+            <div class="wait_terms-item">
+              <div class="wait_terms-title">Одобренная сумма</div>
+              <div class="wait_terms-value">1 355 000₽</div>
+            </div>
+            <div class="wait_terms-item">
+              <div class="wait_terms-title">Еж. платеж</div>
+              <div class="wait_terms-value">79 257₽</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wait_table-raw">
+        <div class="wait_table-item">
+          Сегодня
+        </div>
+        <div class="wait_table-item">
+          Попов Н.Э.
+        </div>
+        <div class="wait_table-item">
+          1 644 000₽
+        </div>
+        <div class="wait_table-item">
+          Процедура андеррайтинга в банке
+          <div class="wait_stage-wrap">
+            <div class="wait_stage-item step__violet"></div>
+            <div class="wait_stage-item step__green"></div>
+            <div class="wait_stage-item step__orange"></div>
+          </div>
+        </div>
+        <div class="wait_table-item">
+          <div class="wait_terms">
+            <div class="wait_terms-item">
+              <div class="wait_terms-title">Банк</div>
+              <div class="wait_terms-value">«СМП Банк»</div>
+            </div>
+            <div class="wait_terms-item">
+              <div class="wait_terms-title">Одобренная сумма</div>
+              <div class="wait_terms-value">1 355 000₽</div>
+            </div>
+            <div class="wait_terms-item">
+              <div class="wait_terms-title">Еж. платеж</div>
+              <div class="wait_terms-value">79 257₽</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wait_table-raw">
+        <div class="wait_table-item">
+          Сегодня
+        </div>
+        <div class="wait_table-item">
+          Попов Н.Э.
+        </div>
+        <div class="wait_table-item">
+          1 644 000₽
+        </div>
+        <div class="wait_table-item">
+          Процедура андеррайтинга в банке
+          <div class="wait_stage-wrap">
+            <div class="wait_stage-item step__violet"></div>
+            <div class="wait_stage-item step__green"></div>
+            <div class="wait_stage-item step__orange"></div>
+          </div>
+        </div>
+        <div class="wait_table-item">
+          <div class="wait_terms">
+            <div class="wait_terms-item">
+              <div class="wait_terms-title">Банк</div>
+              <div class="wait_terms-value">«СМП Банк»</div>
+            </div>
+            <div class="wait_terms-item">
+              <div class="wait_terms-title">Одобренная сумма</div>
+              <div class="wait_terms-value">1 355 000₽</div>
+            </div>
+            <div class="wait_terms-item">
+              <div class="wait_terms-title">Еж. платеж</div>
+              <div class="wait_terms-value">79 257₽</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
 </template>
 <style scoped>
 </style>
 <script>
 export default {
   data() {
-    return {
-      value: 1
-    }
+    return {}
   }
 };
 </script>
