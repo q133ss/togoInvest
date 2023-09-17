@@ -128,6 +128,18 @@ $layoutWidth: 1186px;
   text-decoration: none;
 }
 
+.mob_menu{
+  display: none;
+}
+
+.mobile_menu-wrap{
+  display: none;
+}
+
+.open{
+  display: block!important;
+}
+
 // First screen
 
 .main__section{
@@ -1161,4 +1173,151 @@ footer .container .footer_header-wrap:nth-child(2){
 
 .copyright span{
   font-weight: 700;
+}
+
+@media screen and (max-width: 1250px){
+  .container{
+    width: 1120px;
+  }
+
+  .wait_table-header--item{
+    width: 180px;
+  }
+
+  .wait_table-item{
+    width: 180px;
+  }
+
+  .programs_title{
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1215px){
+  .container{
+    width: 90%;
+  }
+
+  .step{
+    padding: 23px;
+  }
+
+  .footer_content p{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 970px){
+  .help__section{
+    display: grid;
+  }
+
+  .help__section-img{
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .help__section-content{
+    margin: 0 auto;
+  }
+
+  .steps__wrap{
+    display: grid;
+  }
+
+  .step{
+    justify-content: unset;
+  }
+
+  .programs_header{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 955px){
+  .header__phone-text{
+    color: #ffffff;
+  }
+  .calculator__section-main--block{
+    width: 100%;
+  }
+  .calculator__section-wrap{
+    flex-direction: column;
+    padding: 64px 90px 52px 90px;
+  }
+  .coop_wrap{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .history_wrap{
+    flex-direction: column;
+  }
+
+  .swiper{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 801px){
+  .menu{
+    display: none;
+  }
+
+  .header__phone{
+    display: none;
+  }
+
+  .programs_wrap{
+    flex-direction: column;
+  }
+
+  .mob_menu{
+    display: block;
+    color: #FFFFFF;
+  }
+}
+
+//Mob menu
+.mobile_menu-wrap{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #FFFFFF;
+  z-index: 9999;
+  top: 0;
+}
+
+#close_menu{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-family: "Nunito Sans", sans-serif;
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.mobile_menu-wrap nav{
+  display: grid;
+  align-items: center;
+  height: 100%;
+}
+
+.mobile_menu_list{
+  display: grid;
+}
+
+.mobile__menu-item{
+  text-align: center;
+}
+
+.mobile__menu-item a{
+  color: #000;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: 0.5px;
+  text-decoration: none;
 }

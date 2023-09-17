@@ -711,6 +711,7 @@ import Footer from "./components/Footer.vue";
           :slides-per-view="2"
           :space-between="28"
           @swiper="onSwiper"
+          :breakpoints="{ 955:{ slidesPerView:2 }, 0:{ slidesPerView: 1}}"
       >
         <swiper-slide>
           <div class="history_slider_wrap">
