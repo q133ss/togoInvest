@@ -145,39 +145,39 @@ import Footer from "./components/Footer.vue";
         <div class="calc_row">
           <div class="calc_input">
             <h5 class="calculator__section-subheader calc__res_title">Желаемая сумма кредита</h5>
-            <input type="text" placeholder="₽" class="calc_field" value="1000000">
+            <input type="text" placeholder="₽" class="calc_field" v-model="sum">
           </div>
           <div class="calc_btns">
-            <button type="button">1 млн. ₽</button>
-            <button type="button">3 млн. ₽</button>
-            <button type="button">5 млн. ₽</button>
+            <button type="button" @click="setSum(1)">1 млн. ₽</button>
+            <button type="button" @click="setSum(3)">3 млн. ₽</button>
+            <button type="button" @click="setSum(5)">5 млн. ₽</button>
           </div>
         </div>
 
         <div class="calc_row">
           <div class="calc_input">
             <h5 class="calculator__section-subheader calc__res_title">Срок кредита (мес.)</h5>
-            <input type="text" placeholder="Мес." class="calc_field" value="">
+            <input type="text" placeholder="Мес." class="calc_field" v-model="date">
           </div>
           <div class="calc_btns">
-            <button type="button">5 лет</button>
-            <button type="button">7 лет</button>
-            <button type="button">20 лет</button>
-            <button type="button">30 лет</button>
+            <button type="button" @click="setDate(5)">5 лет</button>
+            <button type="button" @click="setDate(7)">7 лет</button>
+            <button type="button" @click="setDate(20)">20 лет</button>
+            <button type="button" @click="setDate(30)">30 лет</button>
           </div>
         </div>
 
         <div class="calc_row">
           <div class="calc_input">
             <h5 class="calculator__section-subheader calc__res_title">Годовая ставка (%)</h5>
-            <input type="text" placeholder="%" class="calc_field" value="3">
+            <input type="text" placeholder="%" class="calc_field" v-model="percent">
           </div>
           <div class="calc_btns">
-            <button type="button">3 %</button>
-            <button type="button">8 %</button>
-            <button type="button">10 %</button>
-            <button type="button">12 %</button>
-            <button type="button">16 %</button>
+            <button type="button" @click="setPercent(3)">3 %</button>
+            <button type="button" @click="setPercent(8)">8 %</button>
+            <button type="button" @click="setPercent(10)">10 %</button>
+            <button type="button" @click="setPercent(12)">12 %</button>
+            <button type="button" @click="setPercent(16)">16 %</button>
           </div>
         </div>
 
@@ -186,15 +186,15 @@ import Footer from "./components/Footer.vue";
         <div class="calc_row">
           <div class="calc_input">
             <h5 class="calculator__section-subheader calc__res_title">Вид платежа</h5>
-            <select name="" class="calc_target" id="">
-              <option value="Аннуитетные">Аннуитетные</option>
-              <option value="Дифференцированный">Дифференцированный</option>
+            <select name="" class="calc_target" id="" v-model="type">
+              <option value="1">Аннуитетные</option>
+              <option value="2">Дифференцированный</option>
             </select>
           </div>
 
           <div class="credit_date">
             <h5 class="calculator__section-subheader calc__res_title">Дата получения кредита</h5>
-            <input type="text" placeholder="%" class="calc_field" value="17.09.2023">
+            <input type="date" class="calc_field" v-model="getDate">
           </div>
         </div>
 
@@ -211,12 +211,12 @@ import Footer from "./components/Footer.vue";
             <h5 class="calculator__section-subheader">
               Ежемесячный платеж
             </h5>
-            <div class="calculator__section-sum" id="calc_sum"> {{sum}} ₽</div>
+            <div class="calculator__section-sum" id="calc_sum"> {{monthlyPayment}} ₽</div>
 
             <h5 class="calculator__section-subheader calc__res_title">
               Переплата по процентам за кредит
             </h5>
-            <div class="calculator__section-sum" id="calc_sum"> 7 500 ₽ </div>
+            <div class="calculator__section-sum" id="calc_sum"> {{interestOverpayment}} ₽ </div>
 
             <h5 class="calculator__section-subheader calc__res_title">
               Эффективная процентная ставка
@@ -1326,16 +1326,31 @@ export default {
   },
   mounted() {
 
+    const today = new Date();
+    const yyyy = today.getFullYear();
+    let mm = today.getMonth() + 1; // Months start at 0!
+    let dd = today.getDate();
+
+    if (dd < 10) dd = '0' + dd;
+    if (mm < 10) mm = '0' + mm;
+
+    const formattedToday = dd + '/' + mm + '/' + yyyy;
+
+    this.getDate = formattedToday;
   },
   setup() {
 
   },
   data() {
     return {
-      sum: 450000,
-      years: 5,
+      sum: 0,
+      date: 0,
       result: 0,
-      percent: 3,
+      percent: 0,
+      type: 1,
+      getDate: null,
+      monthlyPayment: 0,
+      interestOverpayment: 0, //переплата
       swiper: null,
     };
   },
@@ -1350,8 +1365,84 @@ export default {
       document.querySelector('#'+type).classList.add('show');
     },
     calc(){
-      let kp = this.years/12;
-      this.result = (this.sum/kp) + (this.sum*this.percent)/12;
+      if(this.date !== 0 && this.sum !== 0 && this.percent !== 0){
+        //Для аннуитетного
+
+        let period = this.date;
+        let sum = this.sum;
+        let rate = this.percent;
+
+        var i,
+            koef,
+            result;
+
+        // ставка в месяц
+        i = (rate / 12) / 100;
+
+        // коэффициент аннуитета
+        koef = (i * (Math.pow(1 + i, period * 12))) / (Math.pow(1 + i, period * 12) - 1);
+
+        // итог
+        result = sum * koef;
+
+        // округлим до целых
+        this.monthlyPayment = result.toFixed();
+        // процент переплаты
+        this.calculateInterestOverpayment()
+      }
+    },
+    calculateInterestOverpayment() {
+      if (this.date !== 0 && this.sum !== 0 && this.percent !== 0) {
+        const period = this.date;
+        const sum = this.sum;
+        const rate = this.percent;
+
+        let totalInterestOverpayment = 0;
+
+        if (this.type === 1) { // Аннуитетные платежи
+          let remainingPrincipal = sum;
+
+          for (let month = 1; month <= period * 12; month++) {
+            const monthlyInterest = (remainingPrincipal * rate) / 12 / 100;
+            totalInterestOverpayment += monthlyInterest;
+            remainingPrincipal -= (this.monthlyPayment - monthlyInterest);
+          }
+        } else if (this.type == 2) { // Дифференцированные платежи
+          let remainingPrincipal = sum;
+          const monthlyPrincipalPayment = sum / (period * 12);
+
+          for (let month = 1; month <= period * 12; month++) {
+            const monthlyInterest = (remainingPrincipal * rate) / 12 / 100;
+            totalInterestOverpayment += monthlyInterest;
+            remainingPrincipal -= monthlyPrincipalPayment;
+          }
+        }
+
+        // округлим до целых
+        this.interestOverpayment = totalInterestOverpayment.toFixed();
+      }
+    },
+    setSum(val){
+      switch (val){
+        case 1:
+          this.sum = 1000000;
+          break;
+        case 3:
+          this.sum = 3000000;
+          break;
+        case 5:
+          this.sum = 5000000;
+          break;
+      }
+      this.calc();
+    },
+    setDate(val){
+      this.date = val;
+      this.calc();
+    },
+    setPercent(val){
+      this.percent = val;
+      this.calc();
     },
     onSwiper(swiper) {
       this.swiper = swiper;
