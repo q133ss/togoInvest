@@ -1319,6 +1319,10 @@ footer .container .footer_header-wrap:nth-child(2){
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .calc__result_block{
+    width: 100%;
+  }
+
   .history_wrap{
     flex-direction: column;
   }
@@ -1418,6 +1422,14 @@ footer .container .footer_header-wrap:nth-child(2){
 
   .footer_menu{
     flex-direction: column;
+  }
+
+  .calc_row{
+    flex-direction: column;
+    gap: 5px;
+  }
+  .calc_btns{
+    margin-top: 15px;
   }
 }
 
