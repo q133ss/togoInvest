@@ -994,3 +994,25 @@ $layoutWidth: 1186px;
 .program_btn{
   margin-top: 26px;
 }
+
+.coop{
+  background: #40AB91;
+  padding-bottom: 97px;
+}
+
+.coop_wrap{
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 25px;
+}
+
+.coop_item{
+  border-radius: 10px 30px 10px 10px;
+  border: 1px solid #D9D9D9;
+  background: var(--COLOR-Grey_0, #FBFCFD);
+  box-shadow: 0px 0px 40px 0px rgba(1, 165, 163, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

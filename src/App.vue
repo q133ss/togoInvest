@@ -636,6 +636,57 @@ import Header from "./components/Header.vue";
       </div>
     </div>
   </section>
+
+  <section class="coop">
+    <div class="container">
+    <h3 class="wait_title">
+      Сотрудничаем с 19 банками и 6 <br>
+      краундлендинговыми платформами
+    </h3>
+
+    <div class="coop_wrap">
+      <div class="coop_item">
+        <img src="/img/Sber Avto logo 1.png" alt="">
+      </div>
+
+      <div class="coop_item">
+        <img src="/img/tochka-bank_logo 1.png" alt="">
+      </div>
+
+      <div class="coop_item">
+        <img src="/img/Group 956.svg" alt="">
+      </div>
+
+      <div class="coop_item">
+        <img src="/img/PochtaBank logo 1.svg" alt="">
+      </div>
+
+      <div class="coop_item">
+        <img src="/img/finam_logo 1.png" alt="">
+      </div>
+
+      <div class="coop_item">
+        <img src="/img/Sber Avto logo 1.png" alt="">
+      </div>
+
+      <div class="coop_item">
+        <img src="/img/tochka-bank_logo 1.png" alt="">
+      </div>
+
+      <div class="coop_item">
+        <img src="/img/Group 956.svg" alt="">
+      </div>
+
+      <div class="coop_item">
+        <img src="/img/PochtaBank logo 1.svg" alt="">
+      </div>
+
+      <div class="coop_item">
+        <img src="/img/finam_logo 1.png" alt="">
+      </div>
+    </div>
+    </div>
+  </section>
 </template>
 <style scoped>
 </style>
